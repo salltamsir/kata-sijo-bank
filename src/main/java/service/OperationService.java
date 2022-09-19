@@ -15,6 +15,6 @@ public class OperationService implements IOperationService {
 
     @Override
     public List<Operation> findByAccountId(String accountId) {
-        return null;
+        return operationDao.findAll(accountId);
     }
 }
